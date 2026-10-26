@@ -2,6 +2,8 @@
 
 微信适配维护：**JumpingAlcohol**（B站同名）。这是WeChatAgent API v2插件，适用于支持actions、documents和daily-schedule接口的宿主；与DSH插件的安装方式不同。
 
+**微信宿主：[sourcepro5/WeChatAgent](https://github.com/sourcepro5/WeChatAgent)。** 本项目基于WeChatAgent的插件接口进行微信适配，使用其聊天授权、隔离存储与工具调用能力。梗百科的设计和数据另有上游来源，见下方的astrbot_plugin_memewiki与cnmeme.wiki说明；JumpingAlcohol负责微信适配和维护，感谢各上游项目。
+
 下载本仓库Releases中的 `wechatagent-meme-wiki-1.1.0-plugin.zip`，在WeChatAgent插件页导入，配置权限与聊天范围后启用。不要发送自己的plugins配置或state目录。本项目保留上游署名；不代表原作者或词条站点的官方合作。
 
 基于 [in1t1a1/astrbot_plugin_memewiki](https://github.com/in1t1a1/astrbot_plugin_memewiki) 的数据和设计，适配 WeChatAgent 插件 API v2。无需安装 AstrBot，不改 DSH 主程序。

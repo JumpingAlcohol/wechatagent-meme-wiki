@@ -1,5 +1,7 @@
 # 来源
 
+微信宿主与插件接口：[sourcepro5/WeChatAgent](https://github.com/sourcepro5/WeChatAgent)。本项目为其第三方API v2适配插件，使用宿主提供的聊天授权、隔离存储与工具运行能力；此说明不将WeChatAgent的作者身份归于本适配项目。
+
 上游项目：in1t1a1/astrbot_plugin_memewiki，https://github.com/in1t1a1/astrbot_plugin_memewiki ，MIT，Copyright (c) 2026 in1t1a1。保留其 LICENSE。
 
 本地适配重写了 WeChatAgent API v2 入口、查询、钩子和聊天隔离存储，没有运行或复制 AstrBot 宿主接口。设计参考上游的本地词典优先、在线回落、自动预查与自定义黑话功能。
