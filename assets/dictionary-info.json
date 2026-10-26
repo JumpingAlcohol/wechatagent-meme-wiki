@@ -1,0 +1,13 @@
+{
+  "entries": 6660,
+  "parts": [
+    "memes.json.gz.1",
+    "memes.json.gz.2"
+  ],
+  "upstreamBlob": "40394b7e63560831e90fecb5ec561411ea35f81d",
+  "jsonBytes": 12244109,
+  "compressedBytes": 4197146,
+  "sha256": "93c09899e705d14d6d018396d4b6e307bf3ea7cbd8a5c9acf08ed1ed7d95fbe6",
+  "source": "https://cnmeme.wiki",
+  "upstream": "https://github.com/in1t1a1/astrbot_plugin_memewiki"
+}

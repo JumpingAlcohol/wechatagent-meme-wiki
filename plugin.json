@@ -1,0 +1,94 @@
+{
+  "id": "meme-wiki",
+  "name": "梗百科 · 微信适配版",
+  "version": "1.1.0",
+  "apiVersion": 2,
+  "host": "wechatagent",
+  "author": "bb王zyx · WeChatAgent适配（上游 in1t1a1）",
+  "homepage": "https://github.com/in1t1a1/astrbot_plugin_memewiki",
+  "description": "6660条内置梗词典，本地预查；未知词按需查在线百科。支持明确指令教学，黑话按账号和聊天隔离。",
+  "permissions": [
+    "storage",
+    "web_fetch",
+    "documents",
+    "schedule"
+  ],
+  "requiresHostFeatures": [
+    "actions-v1",
+    "documents-v1",
+    "daily-schedule-v1"
+  ],
+  "requiresAccount": true,
+  "schedule": {
+    "timeSetting": "syncTime"
+  },
+  "settings": {
+    "online": true,
+    "autoPrefetch": true,
+    "maxTerms": 50,
+    "editorHashes": [],
+    "autoSync": false,
+    "syncTime": "04:00",
+    "syncWeekday": "Sunday",
+    "timeZone": "America/Toronto"
+  },
+  "configSchema": {
+    "autoSync": {
+      "type": "boolean",
+      "title": "每周自动补充公共梗词库",
+      "description": "分批扫描并补新增，保留断点；失败15分钟后重试，不覆盖自定义黑话，不发微信。"
+    },
+    "syncTime": {
+      "type": "string",
+      "title": "同步检查时间（所选时区）",
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "syncWeekday": {
+      "type": "string",
+      "title": "每周开始同步的星期",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    "timeZone": {
+      "type": "string",
+      "title": "自动同步时区",
+      "enum": [
+        "America/Toronto",
+        "Asia/Shanghai",
+        "UTC"
+      ]
+    },
+    "online": {
+      "type": "boolean",
+      "title": "本地查不到时允许查在线百科"
+    },
+    "autoPrefetch": {
+      "type": "boolean",
+      "title": "聊天时预查本地梗词典"
+    },
+    "maxTerms": {
+      "type": "integer",
+      "title": "每聊天最多保留的自定义黑话",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "editorHashes": {
+      "type": "array",
+      "title": "群黑话管理者的微信ID SHA256",
+      "description": "私聊可管理本聊天黑话；群聊仅此列表中的已验证发言人可增删。空列表表示禁止群聊写入。",
+      "items": {
+        "type": "string",
+        "minLength": 64,
+        "maxLength": 64
+      }
+    }
+  }
+}
