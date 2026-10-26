@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "apiVersion": 2,
   "host": "wechatagent",
-  "author": "bb王zyx · WeChatAgent适配（上游 in1t1a1）",
+  "author": "JumpingAlcohol · WeChatAgent适配（上游 in1t1a1）",
   "homepage": "https://github.com/in1t1a1/astrbot_plugin_memewiki",
   "description": "6660条内置梗词典，本地预查；未知词按需查在线百科。支持明确指令教学，黑话按账号和聊天隔离。",
   "permissions": [

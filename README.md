@@ -1,6 +1,6 @@
 # 梗百科 · WeChatAgent 适配版
 
-微信适配维护：**bb王zyx**（B站同名）。这是WeChatAgent API v2插件，适用于支持actions、documents和daily-schedule接口的宿主；与DSH插件的安装方式不同。
+微信适配维护：**JumpingAlcohol**（B站同名）。这是WeChatAgent API v2插件，适用于支持actions、documents和daily-schedule接口的宿主；与DSH插件的安装方式不同。
 
 下载本仓库Releases中的 `wechatagent-meme-wiki-1.1.0-plugin.zip`，在WeChatAgent插件页导入，配置权限与聊天范围后启用。不要发送自己的plugins配置或state目录。本项目保留上游署名；不代表原作者或词条站点的官方合作。
 
